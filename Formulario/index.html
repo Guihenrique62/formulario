@@ -5,13 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Meu Formulario</title>
 </head>
 <body>
     <main>
      <section class="main">
-        <section class="form">
-            <input class="inpname"type="text" value="" placeholder="Name">
+        <section class="b">
+            <section class="form">
+                <h1 class="title">Preencha o Formulario</h1>
+
+                <label class="form_label">
+                    <span>Nome Completo</span>
+                    <input class="inp"type="text" name="name">
+                </label>
+
+                <label class="form_label">
+                    <span>Email</span>
+                    <input class="inp"type="text" name="email">
+                </label>
+
+                <label class="form_label">
+                    <span>Telefone</span>
+                    <input class="inp" type="tel" name="telefone">
+                </label>
+
+                <label class='label_sex'>
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="sexo" value="feminino" >
+                    <label>Feminino</label><br>
+                    <input type="radio" name="sexo" value="masculino" >
+                    <label>Masculino</label><br>
+                    <input type="radio" name="sexo" value="feminino" >
+                    <label>Outros</label>
+                </label><br><br><br><br><br><br>
+                <label class="date">
+                    <span>Data de Nascimento:<input type="date"></span>
+                    
+                </label><br><br>
+                    
+                <label class="form_label">
+                    <span>Cidade</span>
+                    <input class="inp"type="text" name="Cidade">
+                </label>
+
+                <label class="form_label">
+                    <span>Estado</span>
+                    <input class="inp"type="text" name="Estado">
+                </label>
+
+                <label class="form_label">
+                    <span>Endereço</span>
+                    <input class="inp"type="text" name="Endereço">
+                </label>
+
+                <input type="button" onclick="window.open('/result.html');" class="button" value="Enviar" >
+                
+            </section>
         </section>
      </section>
      </main>
