@@ -11,9 +11,12 @@
     $telefone = isset($_POST["ftelefone"])?$_POST["ftelefone"]: "Telefone do Usuário";
     $sex = isset($_POST["sexo"])?$_POST["sexo"]: "Sexo do Usuário";
     $date = isset($_POST["fdate"])?$_POST["fdate"]: "Data_Nascimento";
-    $cidade = isset($_POST["fcidade"])?$_POST["fcidade"]: "Cidade";
-    $estado = isset($_POST["festado"])?$_POST["festado"]: "Estado";
+    //$cidade = isset($_POST["fcidade"])?$_POST["fcidade"]: "Cidade";
+    // $estado = isset($_POST["festado"])?$_POST["festado"]: "Estado";
     $endereço = isset($_POST["fendereço"])?$_POST["fendereço"]: "Endereço";
+
+    $estado = isset($_POST["estados"])?$_POST["estados"]: "Estado";
+
 
     list($ano, $mes, $dia) = explode('-', $date);
     $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
@@ -33,7 +36,9 @@
             <h2>Telefone: </h2> <p><?php echo $telefone;?></p>
             <h2>Sexo: </h2> <p><?php echo $sex;?></p>
             <h2>Idade: </h2> <p><?php  echo "$idade Anos";?></p>
-            <h2>Endereço:</h2> <p><?php echo $endereço;?>, <?php echo $cidade;?> - <?php echo $estado;?></p>
+            <h2>Endereço:</h2> <p><?php echo $endereço;?> </p>
+
+            <h2>Estado: <?php echo $estado; ?></h2>
         </section>
     </main>
 </body>
